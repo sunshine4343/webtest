@@ -2,8 +2,8 @@
 	<view class="container">
 		<ul class="content">
 			<li v-for="(kind,index) in kindLists" :key="index" @click="goToDetail(kind)">
-				<div>{{index + 1}}.{{kind.tit}}</div>
-				<div><img src="http://hgqweb.cn/icon-right1.png" alt=""></div>
+				<div>{{index + 1}}、{{kind.tit}}</div>
+				<div><img src="../../static/icon-right3.png" alt=""></div>
 			</li>
 		</ul>
 	</view>
@@ -52,9 +52,9 @@
 <style scoped lang="less">
 .container {
 	width: 100%;
-	padding: 24rpx 16rpx;
+	padding: 24rpx 0;
 	box-sizing: border-box;
-	background-color: #e6e6e6;
+	background-color: #f5f5f5;
 	overflow: hidden;
 	.content {
 		width: 100%;
@@ -62,14 +62,15 @@
 			width: calc(100% - 16rpx);
 			padding: 24rpx 0;
 			background-color: #FFFFFF;
-			margin: 16rpx auto;
 			position: relative;
 			overflow: hidden;
+			color: #143dcc;
+			border-bottom: 1rpx solid #eeeeee;
 			div:nth-child(1) {
 				width: 100%;
 				height: 100%;
 				float: right;
-				padding: 0 72rpx 0 10rpx;
+				padding: 0 108rpx 0 10rpx;
 				line-height: 64rpx;
 				box-sizing: border-box;
 			}
