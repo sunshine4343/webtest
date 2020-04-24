@@ -23,17 +23,17 @@
 			return {
 				kindLists: [
 					{
-						img: 'http://hgqweb.cn/js2.jpg?imageView2/1/w/120/h/120',
+						img: 'http://hgqweb.cn/basicprofile.png',
 						tit: 'Javascript',
 						id: ''
 					},
 					{
-						img: 'http://hgqweb.cn/node3.jpg?imageView2/1/w/120/h/120',
+						img: 'http://hgqweb.cn/basicprofile.png',
 						tit: 'Node.js',
 						id: ''
 					},
 					{
-						img: 'http://hgqweb.cn/es62.jpg?imageView2/1/w/120/h/120',
+						img: 'http://hgqweb.cn/basicprofile.png',
 						tit: 'ES6',
 						id: ''
 					},
@@ -93,7 +93,7 @@
 		methods: {
 			goToList (item) {
 				uni.navigateTo({
-					url: '/pages/list/index'
+					url: '/pages/list/index?tag='+item.tit
 				})
 			}
 		}
@@ -135,6 +135,8 @@
 	}
 	.content {
 		width: 100%;
+		list-style: none;
+		padding: 0;
 		li {
 			width: 100%;
 			height: 120rpx;

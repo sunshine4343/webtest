@@ -10,11 +10,11 @@
                 退出登录
             </span>
         </div>
-       <!-- <div class="my-resourse" @click="gotoZN">
-            <div class="my-res-l"><img src="https://files.mijwed.com/static/mini/mjwedshare/icon-info-txt.png" alt="">操作指南</div>
+       <div class="my-resourse" @click="gotoZN">
+            <div class="my-res-l"><img src="https://files.mijwed.com/static/mini/mjwedshare/icon-info-txt.png" alt="">创建题目</div>
             <div class="my-res-r"><img src="https://files.mijwed.com/static/mini/mjwedshare/icon-go-r.png" alt=""></div>
-        </div> -->
-         <div class="my-resourse share-list">
+        </div>
+        <div class="my-resourse share-list">
             <div class="my-res-l"><img src="https://files.mijwed.com/static/mini/mjwedshare/icon-tuijian.png" alt="">推荐小程序给朋友</div>
             <div class="my-res-r"><img src="https://files.mijwed.com/static/mini/mjwedshare/icon-go-r.png" alt=""></div>
             <button open-type="share" class="share-btn"></button>
@@ -205,8 +205,9 @@ export default {
 		},
 
 		gotoZN () {
+            console.log('666')
 			uni.navigateTo({
-				url: `/pages/webView/index?url=https://www.hgqweb.cn`
+				url: "/pages/add/index"
 			})
 		}
 	}
